@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱۵: پورپورای ترومبوسیتوپنیک ایمنی (ITP) - هماتولوژی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #f97316;
+            border-radius: 2px;
+        }
+        .staging-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .staging-table th {
+            background-color: #f97316;
+            color: white;
+            padding: 12px;
+            text-align: right;
+            font-weight: 600;
+        }
+        .staging-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: right;
+        }
+        .staging-table tr:last-child td {
+            border-bottom: none;
+        }
+        .staging-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .info-card {
+            background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);
+            border-right: 4px solid #f97316;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .danger-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-right: 4px solid #ef4444;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۱۵: پورپورای ترومبوسیتوپنیک ایمنی (ITP)</h1>
+                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+        
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تعریف و اتیولوژی</a>
+            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تظاهرات بالینی</a>
+            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تشخیص</a>
+            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">تشخیص افتراقی</a>
+            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">درمان</a>
+            <a href="#sec6" class="bg-white px-4 py-2 rounded-full shadow hover:bg-orange-50 text-orange-700 whitespace-nowrap">نوتروپنی</a>
+        </nav>
+
+        <!-- Section 1: تعریف و اتیولوژی -->
+        <section id="sec1" class="card p-6">
+            <h2 class="section-title text-xl">1. تعریف و اتیولوژی ITP</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-orange-900 mb-2">📌 تعریف</h4>
+                    <p class="text-orange-800"><bdi dir="ltr">ITP</bdi> (پورپورای ترومبوسیتوپنیک ایمنی) یک اختلال خونریزی‌دهنده است که در آن سیستم ایمنی بدن آنتی‌بادی‌هایی علیه پلاکت‌ها تولید می‌کند و باعث تخریب زودرس آن‌ها می‌شود.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">طبقه‌بندی ITP</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>نوع</th>
+                                <th>مدت زمان</th>
+                                <th>ویژگی‌ها</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ITP حاد</strong></td>
+                                <td>&lt; <bdi dir="ltr">3</bdi> ماه</td>
+                                <td>شایع در کودکان، غالباً پس از عفونت ویروسی، بهبود خودبخود</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ITP مزمن</strong></td>
+                                <td>&gt; <bdi dir="ltr">12</bdi> ماه</td>
+                                <td>شایع در بزرگسالان (خصوصاً زنان)، نیاز به درمان</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ITP مقاوم</strong></td>
+                                <td>-</td>
+                                <td>عدم پاسخ به اسپلنکتومی</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">اتیولوژی</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 mb-2">ITP اولیه (ایدیوپاتیک)</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• بدون علت زمینه‌ای مشخص</li>
+                            <li>• <bdi dir="ltr">80-90%</bdi> موارد</li>
+                            <li>• آنتی‌بادی ضد <bdi dir="ltr">GPIIb/IIIa</bdi></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400">
+                        <h4 class="font-bold text-purple-800 mb-2">ITP ثانویه</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• <bdi dir="ltr">SLE</bdi> (لوپوس)</li>
+                            <li>• عفونت‌ها (<bdi dir="ltr">HIV، HCV</bdi>)</li>
+                            <li>• داروها (هپارین، کینین، سولفونامیدها)</li>
+                            <li>• لنفوم‌ها</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">ITP</bdi> یک تشخیص اقصایی (Diagnosis of Exclusion) است - یعنی ابتدا باید سایر علل ترومبوسیتوپنی رد شوند.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: تظاهرات بالینی -->
+        <section id="sec2" class="card p-6">
+            <h2 class="section-title text-xl">2. تظاهرات بالینی ITP</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-orange-700 mb-3">علائم و نشانه‌ها</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-400">
+                        <h4 class="font-bold text-red-800 mb-2">🩸 خونریزی پوستی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• <strong>پتشیه</strong>: نقاط قرمز ریز (&lt; <bdi dir="ltr">2</bdi> میلی‌متر)</li>
+                            <li>• <strong>پورپورا</strong>: لکه‌های بنفش (<bdi dir="ltr">2-10</bdi> میلی‌متر)</li>
+                            <li>• <strong>اکیموز</strong>: کبودی بزرگ (&gt; <bdi dir="ltr">10</bdi> میلی‌متر)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-pink-50 p-4 rounded-lg border-r-4 border-pink-400">
+                        <h4 class="font-bold text-pink-800 mb-2">💧 خونریزی مخاطی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• خونریزی لثه</li>
+                            <li>• خون‌دماغ (<bdi dir="ltr">Epistaxis</bdi>)</li>
+                            <li>• خونریزی دستگاه گوارش</li>
+                            <li>• منوراژی (قاعدگی شدید)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="danger-box">
+                    <h4 class="font-bold text-red-900 mb-2">⚠️ خونریزی خطرناک</h4>
+                    <p class="text-red-800">خونریزی داخل مغزی (<bdi dir="ltr">Intracranial Hemorrhage</bdi>) نادر است (&lt; <bdi dir="ltr">1%</bdi>) اما می‌تواند کشنده باشد، خصوصاً زمانی که پلاکت &lt; <bdi dir="ltr">10,000</bdi> است.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">نکات بالینی مهم</h3>
+                
+                <div class="bg-yellow-50 p-4 rounded-lg border-r-4 border-yellow-500 mb-3">
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li><strong>اسپلنومگالی ندارد:</strong> وجود اسپلنومگالی <bdi dir="ltr">ITP</bdi> را رد می‌کند (به سمت لوسمی یا لنفوم فکر کنید)</li>
+                        <li><strong>لنفادنوپاتی ندارد:</strong> وجود لنفادنوپاتی نیز <bdi dir="ltr">ITP</bdi> را مشکوک می‌کند</li>
+                        <li><strong>فقط پلاکت پایین:</strong> در <bdi dir="ltr">CBC</bdi> فقط پلاکت پایین است، <bdi dir="ltr">WBC</bdi> و <bdi dir="ltr">Hb</bdi> طبیعی</li>
+                    </ul>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته 100% امتحانی:</strong> در <bdi dir="ltr">ITP</bdi> اندازه طحال و غدد لنفاوی طبیعی است. اگر اسپلنومگالی یا لنفادنوپاتی داشت، به بدخیمی فکر کنید!
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: تشخیص -->
+        <section id="sec3" class="card p-6">
+            <h2 class="section-title text-xl">3. تشخیص ITP</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-orange-900 mb-2">📌 معیارهای تشخیصی</h4>
+                    <p class="text-orange-800"><bdi dir="ltr">ITP</bdi> یک تشخیص اقصایی است - تشخیص با رد کردن سایر علل ترومبوسیتوپنی انجام می‌شود.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">یافته‌های آزمایشگاهی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>آزمایش</th>
+                                <th>یافته در ITP</th>
+                                <th>اهمیت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>تعداد پلاکت</td>
+                                <td class="text-red-600 font-bold">&lt; <bdi dir="ltr">100,000</bdi></td>
+                                <td>معیار اصلی</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">WBC</bdi></td>
+                                <td>طبیعی</td>
+                                <td>رد لوسمی/لنفوم</td>
+                            </tr>
+                            <tr>
+                                <td>هموگلوبین</td>
+                                <td>طبیعی (مگر خونریزی شدید)</td>
+                                <td>رد اختلالات مغز استخوان</td>
+                            </tr>
+                            <tr>
+                                <td>اسمیر خون محیطی</td>
+                                <td>پلاکت‌های بزرگ (<bdi dir="ltr">Megathrombocytes</bdi>)</td>
+                                <td>نشان‌دهنده تولید بالا در مغز استخوان</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">PT / PTT</bdi></td>
+                                <td>طبیعی</td>
+                                <td>رد کوآگولوپاتی</td>
+                            </tr>
+                            <tr>
+                                <td>بیوپسی مغز استخوان</td>
+                                <td>مگاکاریوسیت‌های طبیعی یا ↑</td>
+                                <td>فقط در موارد مشکوک</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400 mb-3">
+                    <h4 class="font-bold text-blue-800 mb-2">🔬 آزمایشات تکمیلی</h4>
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li><strong><bdi dir="ltr">HIV</bdi> و <bdi dir="ltr">HCV</bdi>:</strong> غربالگری عفونت‌های ویروسی</li>
+                        <li><strong><bdi dir="ltr">ANA</bdi> و <bdi dir="ltr">Anti-dsDNA</bdi>:</strong> غربالگری <bdi dir="ltr">SLE</bdi></li>
+                        <li><strong><bdi dir="ltr">H. pylori</bdi>:</strong> در برخی موارد با درمان عفونت بهبود می‌یابد</li>
+                        <li><strong>تست حاملگی:</strong> در زنان سن باروری</li>
+                    </ul>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> بیوپسی مغز استخوان در <bdi dir="ltr">ITP</bdi> روتین نیست. فقط در موارد زیر انجام می‌شود:
+                    <ul class="list-disc mr-6 mt-2 text-sm">
+                        <li>سن بالای <bdi dir="ltr">60</bdi> سال</li>
+                        <li>ناهنجاری در <bdi dir="ltr">WBC</bdi> یا <bdi dir="ltr">RBC</bdi></li>
+                        <li>عدم پاسخ به درمان</li>
+                        <li>قبل از اسپلنکتومی</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: تشخیص افتراقی -->
+        <section id="sec4" class="card p-6">
+            <h2 class="section-title text-xl">4. تشخیص افتراقی ترومبوسیتوپنی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-orange-700 mb-3">علل اصلی ترومبوسیتوپنی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>بیماری</th>
+                                <th>تعداد پلاکت</th>
+                                <th>یافته‌های افتراقی</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ITP</strong></td>
+                                <td>&lt; <bdi dir="ltr">100,000</bdi></td>
+                                <td>فقط پلاکت پایین، طحال طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TTP</strong></td>
+                                <td>&lt; <bdi dir="ltr">30,000</bdi></td>
+                                <td>پنتاد: ترومبوسیتوپنی، همولیز، تب، نارسایی کلیه، اختلالات نورولوژیک</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DIC</strong></td>
+                                <td>متغیر</td>
+                                <td><bdi dir="ltr">PT/PTT</bdi> طولانی، فیبرینوژن ↓، <bdi dir="ltr">D-dimer</bdi> ↑↑</td>
+                            </tr>
+                            <tr>
+                                <td><strong>HIT</strong></td>
+                                <td>کاهش <bdi dir="ltr">50%</bdi></td>
+                                <td>سابقه مصرف هپارین، ترومبوز</td>
+                            </tr>
+                            <tr>
+                                <td><strong>لوسمی</strong></td>
+                                <td>متغیر</td>
+                                <td>پانسیتوپنی، بلاست در اسمیر، اسپلنومگالی</td>
+                            </tr>
+                            <tr>
+                                <td><strong>آپالزی مغز استخوان</strong></td>
+                                <td>&lt; <bdi dir="ltr">50,000</bdi></td>
+                                <td>پانسیتوپنی، مغز استخوان خالی</td>
+                            </tr>
+                            <tr>
+                                <td><strong>هیپراسپلنیسم</strong></td>
+                                <td><bdi dir="ltr">50-100,000</bdi></td>
+                                <td>اسپلنومگالی، پانسیتوپنی خفیف</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 یادآوری:</strong> اگر در سوال امتحان بیماری با ترومبوسیتوپنی + اسپلنومگالی طبیعی + <bdi dir="ltr">WBC/Hb</bdi> طبیعی داشتید → <bdi dir="ltr">ITP</bdi>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: درمان -->
+        <section id="sec5" class="card p-6">
+            <h2 class="section-title text-xl">5. درمان ITP</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-orange-700 mb-3">اندیکاسیون‌های درمان</h3>
+                
+                <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500 mb-4">
+                    <h4 class="font-bold text-green-800 mb-2">✅ چه زمانی درمان شروع کنیم؟</h4>
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li>پلاکت &lt; <bdi dir="ltr">30,000</bdi> با علائم خونریزی</li>
+                        <li>پلاکت &lt; <bdi dir="ltr">10,000</bdi> (حتی بدون علائم)</li>
+                        <li>خونریزی فعال (هر سطح پلاکت)</li>
+                        <li>قبل از جراحی یا پروسیجر تهاجمی</li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">خط اول درمان</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>درمان</th>
+                                <th>دوز</th>
+                                <th>نحوه اثر</th>
+                                <th>نرخ پاسخ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>کورتیکواستروئیدها</strong></td>
+                                <td><bdi dir="ltr">Prednisone 1 mg/kg/day</bdi></td>
+                                <td>کاهش تخریب پلاکت</td>
+                                <td><bdi dir="ltr">70-80%</bdi></td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVIG</strong></td>
+                                <td><bdi dir="ltr">1 g/kg</bdi> در <bdi dir="ltr">1-2</bdi> روز</td>
+                                <td>مسدود کردن رسپتورهای <bdi dir="ltr">Fc</bdi></td>
+                                <td><bdi dir="ltr">70-80%</bdi></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Anti-D</strong></td>
+                                <td><bdi dir="ltr">50-75 μg/kg IV</bdi></td>
+                                <td>مسدود کردن سیستم <bdi dir="ltr">RES</bdi></td>
+                                <td><bdi dir="ltr">60-70%</bdi></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> <bdi dir="ltr">Anti-D</bdi> فقط در افراد <bdi dir="ltr">Rh</bdi> مثبت کار می‌کند و در افراد اسپلنکتومی شده یا <bdi dir="ltr">Rh</bdi> منفی استفاده نمی‌شود.
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">خط دوم درمان (مقاوم به استروئید)</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400">
+                        <h4 class="font-bold text-purple-800 mb-2">اسپلنکتومی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• درمان قطعی (<bdi dir="ltr">60-70%</bdi> پاسخ دائمی)</li>
+                            <li>• واکسیناسیون قبل از عمل (پنوموکوک، منن گوکوک، هموفیلوس)</li>
+                            <li>• خطر عفونت‌های شدید پس از عمل</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 mb-2">آگونیست‌های TPO</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• <bdi dir="ltr">Romiplostim</bdi> (تزریقی)</li>
+                            <li>• <bdi dir="ltr">Eltrombopag</bdi> (خوراکی)</li>
+                            <li>• تحریک تولید پلاکت</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">درمان اورژانسی</h3>
+                
+                <div class="danger-box">
+                    <h4 class="font-bold text-red-900 mb-2">🚨 خونریزی تهدیدکننده حیات</h4>
+                    <p class="text-red-800 mb-2">ترکیب همزمان:</p>
+                    <ol class="list-decimal mr-6 space-y-1 text-sm">
+                        <li><strong>متیل‌پردنیزولون</strong> دوز بالا (<bdi dir="ltr">1 g IV daily</bdi>)</li>
+                        <li><strong>IVIG</strong> (<bdi dir="ltr">2 g/kg</bdi> در <bdi dir="ltr">2-5</bdi> روز)</li>
+                        <li><strong>ترانسفیوژن پلاکت</strong></li>
+                        <li><strong>اسپلنکتومی اورژانسی</strong> (در صورت عدم پاسخ)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: نوتروپنی -->
+        <section id="sec6" class="card p-6">
+            <h2 class="section-title text-xl">6. نوتروپنی و ریسک عفونت</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-orange-900 mb-2">📌 تعریف</h4>
+                    <p class="text-orange-800">نوتروپنی: کاهش تعداد نوتروفیل‌ها در خون محیطی که ریسک عفونت را افزایش می‌دهد.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-orange-700 mt-6 mb-3">طبقه‌بندی شدت نوتروپنی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>درجه</th>
+                                <th>تعداد نوتروفیل (<bdi dir="ltr">ANC</bdi>)</th>
+                                <th>ریسک عفونت</th>
+                                <th>اقدامات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>خفیف</td>
+                                <td><bdi dir="ltr">1000-1500</bdi></td>
+                                <td class="text-green-600">کم</td>
+                                <td>مانیتورینگ</td>
+                            </tr>
+                            <tr>
+                                <td>متوسط</td>
+                                <td><bdi dir="ltr">500-1000</bdi></td>
+                                <td class="text-yellow-600">متوسط</td>
+                                <td>احتیاط، واکسیناسیون</td>
+                            </tr>
+                            <tr>
+                                <td>شدید</td>
+                                <td><bdi dir="ltr">100-500</bdi></td>
+                                <td class="text-orange-600">بالا</td>
+                                <td>پروفیلاکسی آنتی‌بیوتیک</td>
+                            </tr>
+                            <tr>
+                                <td>بسیار شدید</td>
+                                <td>&lt; <bdi dir="ltr">100</bdi></td>
+                                <td class="text-red-600">خیلی بالا</td>
+                                <td><bdi dir="ltr">G-CSF</bdi> + آنتی‌بیوتیک</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته مهم:</strong> در نوتروپنی شدید (&lt; <bdi dir="ltr">500</bdi>)، تب باید به عنوان اورژانس درمان شود - آنتی‌بیوتیک وسیع‌الطیف فوری شروع شود.
+                </div>
+
+                <div class="highlight-box">
+                    <h3 class="font-bold text-lg mb-3">🎯 خلاصه نکات کلیدی فصل 15</h3>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-orange-800">تشخیص ITP:</strong>
+                            <p class="text-sm mt-1">فقط پلاکت پایین + طحال و غدد طبیعی + تشخیص اقصایی</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-orange-800">خط اول درمان:</strong>
+                            <p class="text-sm mt-1">کورتیکواستروئید یا <bdi dir="ltr">IVIG</bdi> (پاسخ <bdi dir="ltr">70-80%</bdi>)</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-orange-800">اسپلنکتومی:</strong>
+                            <p class="text-sm mt-1">درمان قطعی، واکسیناسیون قبل از عمل ضروری</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-orange-800">بیوپسی مغز استخوان:</strong>
+                            <p class="text-sm mt-1">روتین نیست، فقط در سن &gt; <bdi dir="ltr">60</bdi> یا ناهنجاری در <bdi dir="ltr">CBC</bdi></p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-orange-800">نوتروپنی شدید:</strong>
+                            <p class="text-sm mt-1"><bdi dir="ltr">ANC</bdi> &lt; <bdi dir="ltr">500</bdi> → تب = اورژانس، آنتی‌بیوتیک فوری</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-500 text-sm pb-4">
+        <p>📚 تهیه شده از کتاب سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+        <p class="text-xs mt-2">طراحی شده با <span class="text-red-500">❤️</span> برای دانشجویان پزشکی</p>
+    </footer>
+
+</body>
+</html>
