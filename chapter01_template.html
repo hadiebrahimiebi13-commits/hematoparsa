@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱: مقدمه و اصول پایه</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-2xl font-bold">فصل ۱: مقدمه و اصول پایه</h1>
+            <p class="text-blue-100 text-sm mt-1">خلاصه جامع هماتولوژی</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 space-y-8 mt-4">
+
+        <!-- بخش نمونه -->
+        <section class="card p-6">
+            <h2 class="section-title text-xl">این یک فایل نمونه است</h2>
+            
+            <div class="space-y-4 mt-4">
+                <p class="text-gray-700">
+                    این فایل به عنوان <strong>نمونه</strong> ایجاد شده است تا ساختار کلی فایل‌های فصول را نشان دهد.
+                </p>
+                
+                <div class="exam-tip p-4 rounded-lg">
+                    <h4 class="font-bold mb-2">📝 نحوه استفاده:</h4>
+                    <ol class="list-decimal list-inside space-y-2 text-sm">
+                        <li>این فایل را کپی کنید</li>
+                        <li>نام آن را به chapter02.html، chapter03.html و... تغییر دهید</li>
+                        <li>محتوای آن را با محتوای واقعی فصل جایگزین کنید</li>
+                        <li>فایل را در پوشه <code class="bg-red-100 px-1 rounded">chapters/</code> قرار دهید</li>
+                    </ol>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-blue-800 mb-2">نکات مهم:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-blue-900">
+                        <li>حتماً از تگ <code>&lt;!DOCTYPE html&gt;</code> استفاده کنید</li>
+                        <li>تگ‌های head و body را کامل بنویسید</li>
+                        <li>CDN های مورد نیاز (مثل Tailwind CSS) را اضافه کنید</li>
+                        <li>فونت Vazirmatn را برای نمایش صحیح فارسی لود کنید</li>
+                    </ul>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                    <h3 class="font-bold text-green-800 mb-2">✅ ساختار پیشنهادی هر فصل:</h3>
+                    <div class="text-sm text-green-900 space-y-2">
+                        <p>۱. <strong>Header</strong> با عنوان فصل</p>
+                        <p>۲. <strong>Navigation</strong> (اختیاری) برای پرش سریع به بخش‌ها</p>
+                        <p>۳. <strong>بخش‌های محتوا</strong> به صورت کارت‌های جداگانه</p>
+                        <p>۴. <strong>جداول و نمودارها</strong> در صورت نیاز</p>
+                        <p>۵. <strong>نکات امتحانی</strong> با Highlight خاص</p>
+                        <p>۶. <strong>Footer</strong> (اختیاری)</p>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                    <h3 class="font-bold text-yellow-800 mb-2">⚠️ توجه:</h3>
+                    <p class="text-sm text-yellow-900">
+                        وقتی این فایل از طریق <code>index.html</code> بارگذاری می‌شود، 
+                        فقط محتوای داخل تگ <code>&lt;body&gt;</code> نمایش داده می‌شود.
+                        بنابراین استایل‌های موجود در <code>&lt;head&gt;</code> باید کامل باشند.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- بخش نمونه با جدول -->
+        <section class="card p-6 border-t-4 border-indigo-500">
+            <h2 class="section-title text-xl">نمونه جدول</h2>
+            
+            <div class="overflow-x-auto mt-4">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-indigo-600 text-white">
+                            <th class="p-3 text-right">عنوان ۱</th>
+                            <th class="p-3 text-right">عنوان ۲</th>
+                            <th class="p-3 text-right">عنوان ۳</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3">داده ۱</td>
+                            <td class="p-3">داده ۲</td>
+                            <td class="p-3">داده ۳</td>
+                        </tr>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3">داده ۱</td>
+                            <td class="p-3">داده ۲</td>
+                            <td class="p-3">داده ۳</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- بخش نمونه با لیست -->
+        <section class="card p-6">
+            <h2 class="section-title text-xl">نمونه لیست</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-purple-800 mb-2">نکات کلیدی</h3>
+                    <ul class="list-disc list-inside space-y-1 text-sm text-purple-900">
+                        <li>نکته شماره ۱</li>
+                        <li>نکته شماره ۲</li>
+                        <li>نکته شماره ۳</li>
+                        <li>نکته شماره ۴</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-teal-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-teal-800 mb-2">موارد مهم</h3>
+                    <ol class="list-decimal list-inside space-y-1 text-sm text-teal-900">
+                        <li>مورد اول</li>
+                        <li>مورد دوم</li>
+                        <li>مورد سوم</li>
+                        <li>مورد چهارم</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-400 text-xs py-8">
+        فایل نمونه - برای استفاده در پروژه هماتولوژی
+    </footer>
+
+</body>
+</html>
