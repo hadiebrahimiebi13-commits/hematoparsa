@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۱۳: اختلالات ترومبوتیک - هماتولوژی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #7c3aed;
+            border-radius: 2px;
+        }
+        .staging-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .staging-table th {
+            background-color: #7c3aed;
+            color: white;
+            padding: 12px;
+            text-align: right;
+            font-weight: 600;
+        }
+        .staging-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: right;
+        }
+        .staging-table tr:last-child td {
+            border-bottom: none;
+        }
+        .staging-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .info-card {
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            border-right: 4px solid #7c3aed;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .danger-box {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+            border-right: 4px solid #ef4444;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۱۳: اختلالات ترومبوتیک</h1>
+                <p class="text-white/80 text-sm mt-1">سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+        
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#sec1" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">DIC</a>
+            <a href="#sec2" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">HIT</a>
+            <a href="#sec3" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">فاکتور V لیدن</a>
+            <a href="#sec4" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">کمبود پروتئین C</a>
+            <a href="#sec5" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">سندرم آنتی‌فسفولیپید</a>
+            <a href="#sec6" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">درمان ضدانعقادی</a>
+            <a href="#sec7" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">پروفیلاکسی</a>
+            <a href="#sec8" class="bg-white px-4 py-2 rounded-full shadow hover:bg-purple-50 text-purple-700 whitespace-nowrap">جداول مقایسه</a>
+        </nav>
+
+        <!-- Section 1: DIC -->
+        <section id="sec1" class="card p-6">
+            <h2 class="section-title text-xl">1. DIC (انعقاد داخل عروقی منتشر)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-purple-900 mb-2">📌 تعریف</h4>
+                    <p class="text-purple-800"><bdi dir="ltr">DIC</bdi> (انعقاد داخل عروقی منتشر) یکی از شایع‌ترین علل مرگبار تخریب محیطی و غیرایمنی پلاکت‌ها است.</p>
+                </div>
+
+                <div class="danger-box">
+                    <h4 class="font-bold text-red-900 mb-2">⚠️ پارادوکس DIC</h4>
+                    <p class="text-red-800">با وجود اینکه اختلال اولیه در <bdi dir="ltr">DIC</bdi> ایجاد لخته است، لیکن نقطه پایانی بالینی غالباً <strong>کوآگولوپاتی</strong> است.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">اتیولوژی DIC</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-400">
+                        <h4 class="font-bold text-red-800 mb-2">🦠 عفونت‌ها</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• سپسیس یا آندوتوکسین</li>
+                            <li>• باکتریمی گرم منفی</li>
+                            <li>• مننگوکوکسمی</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-4 rounded-lg border-r-4 border-orange-400">
+                        <h4 class="font-bold text-orange-800 mb-2">🔥 تخریب بافتی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• تروما</li>
+                            <li>• سوختگی</li>
+                            <li>• جراحی‌های بزرگ</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-pink-50 p-4 rounded-lg border-r-4 border-pink-400">
+                        <h4 class="font-bold text-pink-800 mb-2">🤰 مامایی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• جدا شدن جفت</li>
+                            <li>• آمبولی مایع آمنیوتیک</li>
+                            <li>• مرگ جنین داخل رحمی</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg border-r-4 border-purple-400">
+                        <h4 class="font-bold text-purple-800 mb-2">🎗️ بدخیمی‌ها</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• لوسمی <bdi dir="ltr">APL</bdi></li>
+                            <li>• سرطان‌های متاستاتیک</li>
+                            <li>• موسین‌ترشح‌کننده</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">یافته‌های آزمایشگاهی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>آزمایش</th>
+                                <th>یافته در DIC</th>
+                                <th>توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>تعداد پلاکت</td>
+                                <td class="text-red-600 font-bold">↓ کاهش</td>
+                                <td>مصرف پلاکت‌ها در لخته‌سازی منتشر</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">PT / PTT</bdi></td>
+                                <td class="text-red-600 font-bold">↑ افزایش</td>
+                                <td>مصرف فاکتورهای انعقادی</td>
+                            </tr>
+                            <tr>
+                                <td>فیبرینوژن</td>
+                                <td class="text-red-600 font-bold">↓ کاهش</td>
+                                <td>مصرف در تشکیل لخته</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">D-dimer</bdi></td>
+                                <td class="text-blue-600 font-bold">↑↑ افزایش شدید</td>
+                                <td>محصول تجزیه فیبرین</td>
+                            </tr>
+                            <tr>
+                                <td>اسمیر خون</td>
+                                <td class="text-orange-600 font-bold">شیستوسیت +</td>
+                                <td>همولیز میکروآنژیوپاتیک</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته 100% امتحانی:</strong> در <bdi dir="ltr">DIC</bdi> همزمان ترومبوز و خونریزی وجود دارد. تست‌های انعقادی (<bdi dir="ltr">PT, PTT</bdi>) طولانی و <bdi dir="ltr">D-dimer</bdi> به شدت بالا می‌رود.
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">درمان DIC</h3>
+                
+                <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500 mb-3">
+                    <h4 class="font-bold text-green-800 mb-2">✅ اصول درمان</h4>
+                    <ol class="list-decimal mr-6 space-y-2">
+                        <li class="text-gray-700"><strong>درمان علت زمینه‌ای</strong> (مهم‌ترین اقدام)</li>
+                        <li class="text-gray-700"><strong>پلاکت</strong>: اگر &lt; <bdi dir="ltr">20,000</bdi> یا خونریزی فعال</li>
+                        <li class="text-gray-700"><strong>فیبرینوژن</strong>: اگر &lt; <bdi dir="ltr">100 mg/dL</bdi> → کرایوپرسیپیتات</li>
+                        <li class="text-gray-700"><strong>FFP</strong>: برای جایگزینی فاکتورهای انعقادی</li>
+                        <li class="text-gray-700"><strong>هپارین</strong>: فقط در موارد خاص (<bdi dir="ltr">APL</bdi>، ترومبوز غالب)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: HIT -->
+        <section id="sec2" class="card p-6">
+            <h2 class="section-title text-xl">2. HIT (ترومبوسیتوپنی ناشی از هپارین)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="danger-box">
+                    <h4 class="font-bold text-red-900 mb-2">⚠️ تفاوت اساسی</h4>
+                    <p class="text-red-800"><bdi dir="ltr">HIT</bdi> با سایر ترومبوسیتوپنی‌های دارویی یک تفاوت اساسی دارد: در <bdi dir="ltr">HIT</bdi> احتمال <strong>ترومبوز</strong> از خونریزی بیشتر است!</p>
+                </div>
+
+                <div class="info-card">
+                    <h4 class="font-bold text-purple-900 mb-2">📌 مکانیسم</h4>
+                    <p class="text-purple-800">در <bdi dir="ltr">2-5%</bdi> بیمارانی که از هپارین شکسته نشده (<bdi dir="ltr">UFH</bdi>) استفاده می‌کنند، آنتی‌بادی‌هایی علیه کمپلکس هپارین-<bdi dir="ltr">PF4</bdi> تشکیل می‌شود که موجب فعال‌سازی پلاکت و ترومبوز می‌گردد.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">مقایسه HIT Type 1 و Type 2</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ویژگی</th>
+                                <th><bdi dir="ltr">HIT Type 1</bdi></th>
+                                <th><bdi dir="ltr">HIT Type 2</bdi></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>شیوع</td>
+                                <td>شایع (<bdi dir="ltr">10-20%</bdi>)</td>
+                                <td>نادر (<bdi dir="ltr">2-5%</bdi>)</td>
+                            </tr>
+                            <tr>
+                                <td>مکانیسم</td>
+                                <td>غیرایمنی، مستقیم</td>
+                                <td>ایمنی، آنتی‌بادی‌محور</td>
+                            </tr>
+                            <tr>
+                                <td>زمان شروع</td>
+                                <td><bdi dir="ltr">2-1</bdi> روز</td>
+                                <td><bdi dir="ltr">10-5</bdi> روز</td>
+                            </tr>
+                            <tr>
+                                <td>تعداد پلاکت</td>
+                                <td>کاهش خفیف (&gt; <bdi dir="ltr">100,000</bdi>)</td>
+                                <td>کاهش شدید (&lt; <bdi dir="ltr">100,000</bdi>)</td>
+                            </tr>
+                            <tr>
+                                <td>ترومبوز</td>
+                                <td>ندارد</td>
+                                <td><strong class="text-red-600">خطر بالا</strong></td>
+                            </tr>
+                            <tr>
+                                <td>نیاز به قطع هپارین</td>
+                                <td>خیر</td>
+                                <td><strong class="text-red-600">بله (فوری)</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی کلیدی:</strong> <bdi dir="ltr">HIT</bdi> را با ترومبوز فکر کنید نه خونریزی! همیشه باید هپارین را قطع و به ضدانعقاد غیرهپارینی (<bdi dir="ltr">Argatroban, Fondaparinux</bdi>) تغییر داد.
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">تشخیص و درمان</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 mb-2">🔬 تشخیص</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• کاهش پلاکت &gt; <bdi dir="ltr">50%</bdi></li>
+                            <li>• <bdi dir="ltr">5-10</bdi> روز پس از شروع هپارین</li>
+                            <li>• آنتی‌بادی ضد <bdi dir="ltr">PF4/Heparin</bdi></li>
+                            <li>• ترومبوز (وریدی یا شریانی)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-400">
+                        <h4 class="font-bold text-green-800 mb-2">💊 درمان</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• <strong>قطع فوری هپارین</strong></li>
+                            <li>• <bdi dir="ltr">Argatroban</bdi> یا <bdi dir="ltr">Fondaparinux</bdi></li>
+                            <li>• <strong>نه</strong> وارفارین تا بهبود پلاکت</li>
+                            <li>• <strong>نه</strong> پلاکت (مگر خونریزی شدید)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: فاکتور V لیدن -->
+        <section id="sec3" class="card p-6">
+            <h2 class="section-title text-xl">3. فاکتور V لیدن (شایع‌ترین ترومبوفیلی ارثی)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-purple-900 mb-2">📌 مکانیسم</h4>
+                    <p class="text-purple-800">موتاسیون در فاکتور <bdi dir="ltr">V</bdi> (جایگزینی <bdi dir="ltr">Arg506</bdi> با <bdi dir="ltr">Gln</bdi>) باعث می‌شود فاکتور <bdi dir="ltr">V</bdi> در برابر غیرفعال‌سازی توسط پروتئین <bdi dir="ltr">C</bdi> فعال مقاوم شود → <strong>وضعیت هیپرکواگولابل</strong></p>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> فاکتور <bdi dir="ltr">V</bdi> لیدن شایع‌ترین اختلال ارثی موجب <bdi dir="ltr">VTE</bdi> است. در اروپا <bdi dir="ltr">3-5%</bdi> جمعیت حامل هتروزیگوت هستند.
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">ریسک ترومبوز</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ژنوتیپ</th>
+                                <th>ریسک نسبی <bdi dir="ltr">VTE</bdi></th>
+                                <th>توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>هتروزیگوت</td>
+                                <td class="text-orange-600 font-bold"><bdi dir="ltr">7×</bdi> برابر</td>
+                                <td>یک کپی موتاسیون</td>
+                            </tr>
+                            <tr>
+                                <td>هموزیگوت</td>
+                                <td class="text-red-600 font-bold"><bdi dir="ltr">80×</bdi> برابر</td>
+                                <td>دو کپی موتاسیون</td>
+                            </tr>
+                            <tr>
+                                <td>هتروزیگوت + <bdi dir="ltr">OCP</bdi></td>
+                                <td class="text-red-600 font-bold"><bdi dir="ltr">30-35×</bdi> برابر</td>
+                                <td>اثر سینرژیستیک</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded-lg border-r-4 border-yellow-500 mb-3">
+                    <h4 class="font-bold text-yellow-800 mb-2">⚠️ فاکتورهای تشدیدکننده</h4>
+                    <p class="text-gray-700">همراهی با ریسک فاکتورهای اکتسابی افزایش چشمگیر خطر:</p>
+                    <ul class="list-disc mr-6 mt-2 space-y-1">
+                        <li>بی‌حرکتی طولانی</li>
+                        <li>حاملگی</li>
+                        <li>مصرف <bdi dir="ltr">OCP</bdi></li>
+                        <li>جراحی</li>
+                    </ul>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">تست تشخیصی</h3>
+                <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                    <p class="text-gray-700"><strong>تست مقاومت به پروتئین <bdi dir="ltr">C</bdi> فعال</strong> (<bdi dir="ltr">APC resistance test</bdi>): غربالگری اولیه</p>
+                    <p class="text-gray-700 mt-2"><strong>تست ژنتیک</strong>: تایید نهایی موتاسیون <bdi dir="ltr">Factor V Leiden</bdi></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: کمبود پروتئین C -->
+        <section id="sec4" class="card p-6">
+            <h2 class="section-title text-xl">4. کمبود پروتئین C و S</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-purple-900 mb-2">📌 نقش فیزیولوژیک</h4>
+                    <p class="text-purple-800">پروتئین <bdi dir="ltr">C</bdi> و <bdi dir="ltr">S</bdi> آنتی‌کواگولانت‌های طبیعی هستند که فاکتورهای <bdi dir="ltr">Va</bdi> و <bdi dir="ltr">VIIIa</bdi> را غیرفعال می‌کنند.</p>
+                </div>
+
+                <div class="danger-box">
+                    <h4 class="font-bold text-red-900 mb-2">⚠️ نکروز ناشی از وارفارین</h4>
+                    <p class="text-red-800">در کمبود پروتئین <bdi dir="ltr">C</bdi>، شروع وارفارین بدون هپارین می‌تواند منجر به <strong>نکروز پوستی</strong> شود (چون پروتئین <bdi dir="ltr">C</bdi> زودتر از فاکتورهای انعقادی کاهش می‌یابد).</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">مقایسه کمبود پروتئین C و S</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ویژگی</th>
+                                <th>کمبود پروتئین C</th>
+                                <th>کمبود پروتئین S</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>شیوع</td>
+                                <td><bdi dir="ltr">0.2-0.4%</bdi></td>
+                                <td>کمتر از پروتئین <bdi dir="ltr">C</bdi></td>
+                            </tr>
+                            <tr>
+                                <td>ارث</td>
+                                <td>اتوزومال دومینانت</td>
+                                <td>اتوزومال دومینانت</td>
+                            </tr>
+                            <tr>
+                                <td>ترومبوز اولین</td>
+                                <td>معمولاً &lt; <bdi dir="ltr">45</bdi> سال</td>
+                                <td>معمولاً &lt; <bdi dir="ltr">45</bdi> سال</td>
+                            </tr>
+                            <tr>
+                                <td>نکروز پوستی</td>
+                                <td><strong class="text-red-600">بله</strong></td>
+                                <td>کمتر شایع</td>
+                            </tr>
+                            <tr>
+                                <td>درمان</td>
+                                <td>ضدانعقاد مادام‌العمر</td>
+                                <td>ضدانعقاد مادام‌العمر</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته امتحانی:</strong> هنگام شروع وارفارین در بیماران با کمبود پروتئین <bdi dir="ltr">C</bdi> حتماً باید هپارین همزمان داده شود تا از نکروز پوستی جلوگیری شود.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: سندرم آنتی‌فسفولیپید -->
+        <section id="sec5" class="card p-6">
+            <h2 class="section-title text-xl">5. سندرم آنتی‌فسفولیپید (APS)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="info-card">
+                    <h4 class="font-bold text-purple-900 mb-2">📌 تعریف</h4>
+                    <p class="text-purple-800">اختلال اتوایمیون با ترومبوز وریدی یا شریانی، سقط مکرر، و وجود آنتی‌بادی‌های آنتی‌فسفولیپید.</p>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">معیارهای تشخیصی (Sydney Criteria)</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-red-50 p-4 rounded-lg border-r-4 border-red-400">
+                        <h4 class="font-bold text-red-800 mb-2">معیارهای بالینی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• ترومبوز عروقی ≥ <bdi dir="ltr">1</bdi></li>
+                            <li>• سقط جنین ≥ <bdi dir="ltr">3</bdi> بار (&lt; هفته <bdi dir="ltr">10</bdi>)</li>
+                            <li>• یا ≥ <bdi dir="ltr">1</bdi> مرگ جنین (&gt; هفته <bdi dir="ltr">10</bdi>)</li>
+                            <li>• یا زایمان زودرس شدید</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg border-r-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 mb-2">معیارهای آزمایشگاهی</h4>
+                        <ul class="text-sm space-y-1">
+                            <li>• لوپوس آنتی‌کواگولانت</li>
+                            <li>• آنتی‌کاردیولیپین (<bdi dir="ltr">IgG/IgM</bdi>)</li>
+                            <li>• آنتی‌بتا-<bdi dir="ltr">2</bdi> گلیکوپروتئین</li>
+                            <li>• <strong>در <bdi dir="ltr">2</bdi> نوبت با فاصله ≥ <bdi dir="ltr">12</bdi> هفته</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 پارادوکس آزمایشگاهی:</strong> لوپوس آنتی‌کواگولانت باعث طولانی شدن <bdi dir="ltr">PTT</bdi> در آزمایشگاه می‌شود، اما در بدن باعث <strong>ترومبوز</strong> می‌گردد!
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">درمان</h3>
+                <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500">
+                    <ul class="list-disc mr-6 space-y-2">
+                        <li><strong>ترومبوز اولین:</strong> وارفارین مادام‌العمر (<bdi dir="ltr">INR 2-3</bdi>)</li>
+                        <li><strong>سقط مکرر:</strong> آسپیرین + هپارین کم وزن مولکولی در حاملگی</li>
+                        <li><strong>APS فاجعه‌آمیز:</strong> هپارین + پلاسمافرزیس + ایمونوگلوبولین</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: درمان ضدانعقادی -->
+        <section id="sec6" class="card p-6">
+            <h2 class="section-title text-xl">6. درمان ضدانعقادی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-purple-700 mb-3">طول مدت درمان ضدانعقاد در VTE</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>شرایط</th>
+                                <th>طول مدت درمان</th>
+                                <th>توضیحات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><bdi dir="ltr">VTE</bdi> با فاکتور محرک موقت</td>
+                                <td class="font-bold"><bdi dir="ltr">3</bdi> ماه</td>
+                                <td>مثل جراحی، شکستگی</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">VTE</bdi> ایدیوپاتیک (اولین حمله)</td>
+                                <td class="font-bold"><bdi dir="ltr">6-3</bdi> ماه</td>
+                                <td>ارزیابی ریسک عود</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">VTE</bdi> عودکننده (≥ <bdi dir="ltr">2</bdi> حمله)</td>
+                                <td class="font-bold text-red-600">مادام‌العمر</td>
+                                <td>ریسک بالای عود</td>
+                            </tr>
+                            <tr>
+                                <td>ترومبوفیلی شدید (همزیگوت)</td>
+                                <td class="font-bold text-red-600">مادام‌العمر</td>
+                                <td>مثل کمبود <bdi dir="ltr">Protein C</bdi></td>
+                            </tr>
+                            <tr>
+                                <td>سرطان فعال</td>
+                                <td class="font-bold text-red-600">تا کنترل سرطان</td>
+                                <td>ترجیحاً <bdi dir="ltr">LMWH</bdi></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="font-bold text-lg text-purple-700 mt-6 mb-3">مقایسه ضدانعقادها</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>دارو</th>
+                                <th>مکانیسم</th>
+                                <th>مانیتورینگ</th>
+                                <th>آنتی‌دوت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><bdi dir="ltr">Warfarin</bdi></td>
+                                <td>مهار ویتامین <bdi dir="ltr">K</bdi></td>
+                                <td><bdi dir="ltr">INR</bdi></td>
+                                <td>ویتامین <bdi dir="ltr">K، FFP</bdi></td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">Heparin (UFH)</bdi></td>
+                                <td>فعال‌سازی آنتی‌ترومبین</td>
+                                <td><bdi dir="ltr">PTT</bdi></td>
+                                <td>پروتامین سولفات</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">LMWH</bdi></td>
+                                <td>فعال‌سازی آنتی‌ترومبین</td>
+                                <td>معمولاً نیاز ندارد</td>
+                                <td>پروتامین (جزئی)</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">Dabigatran</bdi></td>
+                                <td>مهار مستقیم ترومبین</td>
+                                <td>نیاز ندارد</td>
+                                <td><bdi dir="ltr">Idarucizumab</bdi></td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">Rivaroxaban</bdi></td>
+                                <td>مهار مستقیم <bdi dir="ltr">Factor Xa</bdi></td>
+                                <td>نیاز ندارد</td>
+                                <td><bdi dir="ltr">Andexanet alfa</bdi></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: پروفیلاکسی -->
+        <section id="sec7" class="card p-6">
+            <h2 class="section-title text-xl">7. پروفیلاکسی ترومبوآمبولی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <h3 class="font-bold text-lg text-purple-700 mb-3">ارزیابی ریسک و پروفیلاکسی</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>سطح ریسک</th>
+                                <th>مثال‌ها</th>
+                                <th>پروفیلاکسی</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="text-green-600">کم</strong></td>
+                                <td>جراحی جزئی، بیمار راه‌رو</td>
+                                <td>راه‌رفتن زودهنگام</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-yellow-600">متوسط</strong></td>
+                                <td>جراحی عمومی، بیمار بستری</td>
+                                <td><bdi dir="ltr">LMWH</bdi> دوز پایین یا جوراب فشاری</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-orange-600">بالا</strong></td>
+                                <td>جراحی ارتوپدی، تروما</td>
+                                <td><bdi dir="ltr">LMWH</bdi> + روش‌های مکانیکی</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-red-600">خیلی بالا</strong></td>
+                                <td>تعویض مفصل، سابقه <bdi dir="ltr">VTE</bdi></td>
+                                <td><bdi dir="ltr">LMWH</bdi> دوز بالاتر یا <bdi dir="ltr">Warfarin</bdi></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg border-r-4 border-green-500 mb-3">
+                    <h4 class="font-bold text-green-800 mb-2">✅ روش‌های مکانیکی پروفیلاکسی</h4>
+                    <ul class="list-disc mr-6 space-y-1">
+                        <li>جوراب‌های فشاری تدریجی (<bdi dir="ltr">Graduated Compression Stockings</bdi>)</li>
+                        <li>دستگاه فشار متناوب پنوماتیک (<bdi dir="ltr">Intermittent Pneumatic Compression</bdi>)</li>
+                        <li>راه‌رفتن و تحرک زودهنگام</li>
+                    </ul>
+                </div>
+
+                <div class="exam-tip p-4 rounded-lg mb-3">
+                    <strong>💡 نکته مهم:</strong> در بیماران با خطر خونریزی بالا، از روش‌های مکانیکی استفاده می‌شود. در بیماران با ریسک بالای ترومبوز، ترکیب دارویی + مکانیکی بهترین است.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: جداول مقایسه -->
+        <section id="sec8" class="card p-6">
+            <h2 class="section-title text-xl">8. جداول مقایسه‌ای مهم</h2>
+            
+            <div class="space-y-6 mt-4">
+                <h3 class="font-bold text-lg text-purple-700 mb-3">مقایسه DIC، TTP، ITP</h3>
+                
+                <div class="overflow-x-auto mb-4">
+                    <table class="staging-table">
+                        <thead>
+                            <tr>
+                                <th>ویژگی</th>
+                                <th><bdi dir="ltr">DIC</bdi></th>
+                                <th><bdi dir="ltr">TTP</bdi></th>
+                                <th><bdi dir="ltr">ITP</bdi></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>پلاکت</td>
+                                <td>↓ کاهش</td>
+                                <td>↓↓ کاهش شدید</td>
+                                <td>↓↓ کاهش شدید</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">PT/PTT</bdi></td>
+                                <td class="text-red-600">↑ طولانی</td>
+                                <td>طبیعی</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td>فیبرینوژن</td>
+                                <td class="text-red-600">↓ کاهش</td>
+                                <td>طبیعی</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td><bdi dir="ltr">D-dimer</bdi></td>
+                                <td class="text-red-600">↑↑ بالا</td>
+                                <td>↑ خفیف بالا</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td>شیستوسیت</td>
+                                <td>+</td>
+                                <td class="text-red-600">+++</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>کراتینین</td>
+                                <td>ممکن است ↑</td>
+                                <td class="text-red-600">↑↑ بالا</td>
+                                <td>طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td>تظاهرات</td>
+                                <td>خونریزی + ترومبوز</td>
+                                <td>پنتاد کلاسیک</td>
+                                <td>خونریزی پوستی-مخاطی</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 class="font-bold text-lg mb-3">🎯 خلاصه نکات کلیدی فصل 13</h3>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">DIC:</strong>
+                            <p class="text-sm mt-1">پلاکت ↓، <bdi dir="ltr">PT/PTT</bdi> ↑، فیبرینوژن ↓، <bdi dir="ltr">D-dimer</bdi> ↑↑ → درمان علت زمینه‌ای</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">HIT:</strong>
+                            <p class="text-sm mt-1">ترومبوز &gt; خونریزی، قطع هپارین + <bdi dir="ltr">Argatroban</bdi></p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">فاکتور V لیدن:</strong>
+                            <p class="text-sm mt-1">شایع‌ترین ترومبوفیلی ارثی، مقاومت به پروتئین <bdi dir="ltr">C</bdi></p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">کمبود پروتئین C:</strong>
+                            <p class="text-sm mt-1">خطر نکروز پوستی با وارفارین → همیشه با هپارین شروع کنید</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">APS:</strong>
+                            <p class="text-sm mt-1"><bdi dir="ltr">PTT</bdi> طولانی ولی ترومبوز! + سقط مکرر</p>
+                        </div>
+                        
+                        <div class="bg-white/70 p-3 rounded">
+                            <strong class="text-purple-800">طول مدت درمان VTE:</strong>
+                            <p class="text-sm mt-1">موقت: <bdi dir="ltr">3</bdi> ماه، ایدیوپاتیک: <bdi dir="ltr">6-3</bdi> ماه، عودکننده: مادام‌العمر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-500 text-sm pb-4">
+        <p>📚 تهیه شده از کتاب سطر به سطر میکروطبقه‌بندی شده خون و اُنکولوژی - دکتر کامران احمدی</p>
+        <p class="text-xs mt-2">طراحی شده با <span class="text-red-500">❤️</span> برای دانشجویان پزشکی</p>
+    </footer>
+
+</body>
+</html>
