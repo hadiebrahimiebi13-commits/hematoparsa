@@ -1,74 +1,876 @@
-<div class="chapter-container" style="max-width: 900px; margin: 0 auto; padding: 30px 20px;">
-    <div style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px;">
-        <h1 style="font-size: 2.5rem; margin: 0 0 10px 0;">فصل ۸: سندرم‌های میلودیسپلاستیک</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9; margin: 0;">اختلالات دیسپلازیا و سندرم‌های MDS</p>
-    </div>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۸: لوسمی میلوئید حاد (AML)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #f59e0b;
+            border-radius: 2px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .comparison-table th {
+            background-color: #f59e0b;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .comparison-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 13px;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-right: 4px solid #f59e0b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .treatment-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-right: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .risk-good {
+            background: #d1fae5;
+            color: #065f46;
+            font-weight: 600;
+        }
+        .risk-intermediate {
+            background: #fef3c7;
+            color: #92400e;
+            font-weight: 600;
+        }
+        .risk-poor {
+            background: #fee2e2;
+            color: #991b1b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="pb-12">
 
-    <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 25px;">
-        <h2 style="color: #ff6a88; border-bottom: 3px solid #ff6a88; padding-bottom: 10px;">📋 فهرست مطالب</h2>
-        <ul style="line-height: 2; font-size: 1.05rem;">
-            <li>تعریف و تاریخچه MDS</li>
-            <li>پاتوفیزیولوژی دیسپلاسیا</li>
-            <li>کلاسیفیکاسیون FAB و WHO</li>
-            <li>علائم و تظاهرات بالینی</li>
-            <li>تشخیص و معیارها</li>
-            <li>ریسک تبدیل به لوسمی</li>
-            <li>درمان گروپی</li>
-        </ul>
-    </div>
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۸: لوسمی میلوئید حاد (<bdi dir="ltr">AML</bdi>)</h1>
+                <p class="text-amber-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۱۴۷-۱۶۹)</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
 
-    <div style="background: #f0f4ff; border-right: 4px solid #ff6a88; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
-        <h3 style="color: #ff6a88; margin-top: 0;">📌 نکات کلیدی</h3>
-        <ul style="line-height: 2;">
-            <li><strong>MDS:</strong> اختلال کیفی سلول‌های خون</li>
-            <li><strong>دیسپلاسیا:</strong> تغییر شکل و ساختار سلول‌ها</li>
-            <li><strong>معیار تشخیص:</strong> بین 5-19% بلاست‌ها</li>
-            <li><strong>سه سندرم اصلی:</strong> RAEB، RARS، RCMD</li>
-            <li><strong>ریسک لوسمی:</strong> بسته به تعداد بلاست‌ها</li>
-        </ul>
-    </div>
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
 
-    <div style="background: white; padding: 20px; border-radius: 10px; margin-bottom: 25px;">
-        <h3 style="color: #ff6a88;">📊 کلاسیفیکاسیون FAB MDS</h3>
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-            <thead>
-                <tr style="background: #ff6a88; color: white;">
-                    <th style="padding: 12px; text-align: right; border: 1px solid #ddd;">نوع</th>
-                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">بلاست‌ها</th>
-                    <th style="padding: 12px; text-align: right; border: 1px solid #ddd;">ویژگی</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">RA</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">5-9%</td>
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">تنها RBC دیسپلاستیک</td>
-                </tr>
-                <tr style="background: #f9f9f9;">
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">RARS</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">5-9%</td>
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">RBC + ringunsblast</td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">RCMD</td>
-                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">5-9%</td>
-                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">چند سری دیسپلاستیک</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#etiology" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">اتیولوژی</a>
+            <a href="#clinical" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">تظاهرات بالینی</a>
+            <a href="#who" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">طبقه‌بندی WHO</a>
+            <a href="#apl" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">APL</a>
+            <a href="#sarcoma" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">سارکوم میلوئید</a>
+            <a href="#prognosis" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">پیش‌آگهی</a>
+            <a href="#cr" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">بهبودی کامل</a>
+            <a href="#evaluation" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">ارزیابی قبل از درمان</a>
+            <a href="#treatment" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">درمان</a>
+            <a href="#supportive" class="bg-white px-4 py-2 rounded-full shadow hover:bg-amber-50 text-amber-700 whitespace-nowrap">درمان‌های حمایتی</a>
+        </nav>
 
-    <div style="background: #fff9e6; border-right: 4px solid #ffc107; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
-        <h3 style="color: #f57f17; margin-top: 0;">⚠️ نکات مهم برای امتحان</h3>
-        <ol style="line-height: 2;">
-            <li>تفاوت MDS و لوسمی</li>
-            <li>انواع دیسپلاسیا در سلول‌های مختلف</li>
-            <li>ریسک تحول به AML</li>
-            <li>درمان و سازش‌پذیری</li>
-        </ol>
-    </div>
+        <!-- Section 1: اتیولوژی -->
+        <section id="etiology" class="card p-6">
+            <h2 class="section-title text-xl">۱. اتیولوژی <bdi dir="ltr">AML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="exam-tip p-4 rounded-lg">
+                    <h3 class="font-bold mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        نکته ۱۰۰٪ امتحانی
+                    </h3>
+                    <p class="text-sm">
+                        ویروس‌ها هیچ نقشی در ایجاد <bdi dir="ltr">AML</bdi> ندارند! (برخالف برخی لوسمی‌های لنفوئیدی)
+                    </p>
+                </div>
 
-    <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #ddd;">
-        <p style="color: #999; font-size: 0.9rem;">آخرین به‌روزرسانی: فروردین ۱۴۰۵</p>
-    </div>
-</div>
+                <!-- عوامل ژنتیکی -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-3">بیماری‌های ژنتیکی مرتبط با <bdi dir="ltr">AML</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. سندرم داون (تریزومی ۲۱):</strong>
+                            <p class="text-xs mt-1">
+                                - افزایش میزان بروز <bdi dir="ltr">AML</bdi> همراه با سندرم داون<br>
+                                - <bdi dir="ltr">AML</bdi> مرتبط با سندرم داون در کودکان زیر ۴ سال رخ می‌دهد و از نوع مگاکاریوسیتی است<br>
+                                - همراهی با موتاسیون ژن <bdi dir="ltr">GATA1</bdi>
+                            </p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. آنمی فانکونی، سندرم بلوم و آتاکسی تالنژکتازی:</strong>
+                            <p class="text-xs mt-1">بروز <bdi dir="ltr">AML</bdi> را بالا می‌برند</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. نوتروپنی مادرزادی (سندرم کاستمن):</strong>
+                            <p class="text-xs mt-1">ممکن است به <bdi dir="ltr">AML</bdi> تبدیل گردد</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- رادیاسیون و تماس‌های شیمیایی -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">عوامل محیطی</h3>
+                    <div class="grid md:grid-cols-2 gap-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">رادیاسیون</h4>
+                            <p class="text-xs">رادیاسیون یونیزان شانس <bdi dir="ltr">AML</bdi> را بالا می‌برد</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">تماس‌های شیمیایی</h4>
+                            <p class="text-xs">بنزن یکی از موارد مهم است که ریسک <bdi dir="ltr">AML</bdi> را افزایش می‌دهد</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- داروها -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">داروهای مرتبط با <bdi dir="ltr">AML</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. داروهای ضدسرطان:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><strong>عوامل آلکیالن:</strong> ۴-۶ سال پس از مواجهه، همراهی با اختالل کروموزومی ۵ و ۷ (حذف یا منوزومی)</li>
+                                <li><strong>مهارکننده‌های توپوایزومراز <bdi dir="ltr">II</bdi>:</strong> ۱-۳ سال پس از مواجهه، همراهی با اختالل کروموزومی <bdi dir="ltr">11q23</bdi></li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. داروهای دیگر:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>کلرامفنیکل</li>
+                                <li>فنیل بوتازون</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: تظاهرات بالینی -->
+        <section id="clinical" class="card p-6 border-t-4 border-indigo-500">
+            <h2 class="section-title text-xl text-indigo-700">۲. تظاهرات بالینی و آزمایشگاهی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- تظاهرات بالینی -->
+                <div class="bg-indigo-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-indigo-800 mb-3">تظاهرات بالینی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="highlight-box text-sm">
+                            <strong>خستگی معمولاً اولین علامت است</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">علائم غیراختصاصی</h4>
+                            <p class="text-xs">آغاز می‌گردند و تقریباً ۵۰٪ بیماران ۳ ماه قبل از تشخیص لوسمی علامتدار می‌شوند</p>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>خستگی (اولین علامت)</li>
+                                <li>بی‌اشتهایی و کاهش وزن</li>
+                                <li>تب</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">علائم پان‌سیتوپنی</h4>
+                            <p class="text-xs">بیماران با خستگی، عفونت و خونریزی مراجعه می‌کنند؛ حتی اگر تعداد گلبول‌های سفید طبیعی یا افزایش یافته باشد</p>
+                            <div class="exam-tip p-2 rounded mt-2 text-xs">
+                                <strong>نکته مهم:</strong> با وجود افزایش تعداد <bdi dir="ltr">WBC</bdi>‌ها، عفونت یک علامت شایع است؛ چرا که سلول‌های لوسمیک (میلوبالست‌ها)، عملکرد طبیعی ندارند.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2"><bdi dir="ltr">CBC</bdi></h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>آنمی نورموکرومیک-نورموسیتیک:</strong> در هنگام تشخیص وجود دارد (شدید نبوده و همراه با کاهش تعداد رتیکولوسیت‌ها)</li>
+                                <li><strong>لکوسیتوز:</strong> متوسط تعداد گلبول‌های سفید در هنگام تشخیص ۱۵,۰۰۰/μL است</li>
+                                <li><strong>ترومبوسیتوپنی:</strong> در ۷۵٪ موارد پالکت کمتر از ۱۰۰,۰۰۰/μL می‌باشد</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">
+                                <svg class="w-4 h-4 inline ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                                نتیجه‌گیری
+                            </h4>
+                            <p class="text-xs">مبتالیان به <bdi dir="ltr">AML</bdi> با آنمی، ترومبوسیتوپنی و لکوسیتوز مراجعه می‌کنند</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">الم خون محیطی</h4>
+                            <div class="highlight-box text-xs">
+                                <strong>سلول‌های بالست دارای <bdi dir="ltr">Auer rods</bdi> (گرانول‌های آزروفیلیک) پاتوگنومونیک <bdi dir="ltr">AML</bdi> هستند</strong>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">مغز استخوان</h4>
+                            <p class="text-xs mb-2">
+                                <bdi dir="ltr">AML</bdi> با وجود بیشتر از ۲۰٪ میلوبالست در مغز استخوان یا خون مشخص می‌شود
+                            </p>
+                            <div class="exam-tip p-2 rounded text-xs">
+                                <strong>تشخیص افتراقی با سندرم میلودیسپلاستیک:</strong> در <bdi dir="ltr">AML</bdi> میزان بالست ≥ ۲۰٪ است، در سندرم میلودیسپلاستیک < ۲۰٪
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AML منوسیتی -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-3"><bdi dir="ltr">AML</bdi> منوسیتی - ویژگی‌های کاراکتریستیک</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. ارتباط با <bdi dir="ltr">t(9;11)</bdi></strong>
+                        </div>
+                        <div class="exam-tip p-3 rounded">
+                            <strong>۲. انفیلتراسیون سلول‌های بالست لوسمیک در لثه، پوست، بافت نرم و مننژ</strong>
+                            <p class="text-xs mt-1">این ویژگی کاراکتریستیک لوسمی منوسیتی و بیماران با اختلالات کروموزومی <bdi dir="ltr">11q23</bdi> است (۱۰۰٪ امتحانی)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: طبقه‌بندی WHO -->
+        <section id="who" class="card p-6 border-t-4 border-teal-500">
+            <h2 class="section-title text-xl text-teal-700">۳. طبقه‌بندی <bdi dir="ltr">WHO</bdi> برای <bdi dir="ltr">AML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-teal-50 p-4 rounded-lg border border-teal-100">
+                    <p class="text-sm text-teal-900 mb-3">
+                        طبقه‌بندی <bdi dir="ltr">WHO</bdi> بر اساس یافته‌های سیتوژنتیک، مولکولی و مورفولوژیک انجام می‌شود
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. <bdi dir="ltr">AML</bdi> با اختلالات سیتوژنتیک مشخص</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><bdi dir="ltr">AML</bdi> با <bdi dir="ltr">t(8;21)</bdi></li>
+                                <li><bdi dir="ltr">AML</bdi> با <bdi dir="ltr">inv(16)</bdi> یا <bdi dir="ltr">t(16;16)</bdi></li>
+                                <li>لوسمی پرومیلوسیتیک حاد با <bdi dir="ltr">t(15;17)</bdi></li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. <bdi dir="ltr">AML</bdi> با تغییرات مرتبط با میلودیسپلاستیک</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. <bdi dir="ltr">AML</bdi> مرتبط با درمان (ثانویه به شیمی‌درمانی)</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۴. <bdi dir="ltr">AML</bdi> که در طبقات فوق جای نمی‌گیرد</strong>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۵. سارکوم میلوئید</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: لوسمی پرومیلوسیتیک حاد -->
+        <section id="apl" class="card p-6 border-t-4 border-rose-500">
+            <h2 class="section-title text-xl text-rose-700">۴. لوسمی پرومیلوسیتیک حاد (<bdi dir="ltr">APL</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- پاتوژنز -->
+                <div class="bg-rose-50 p-4 rounded-lg border border-rose-100">
+                    <h3 class="font-bold text-rose-800 mb-3">پاتوژنز</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">دو ویژگی ژنتیکی کاراکتریستیک (۱۰۰٪ امتحانی)</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>ترانسلوکاسیون <bdi dir="ltr">t(15;17)</bdi></strong></li>
+                                <li><strong>ژن اتصالی <bdi dir="ltr">PML-RARA</bdi></strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تظاهرات بالینی -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">تظاهرات بالینی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <p class="text-xs mb-2">
+                                مبتالیان به نوع <bdi dir="ltr">APL</bdi> اغلب با خونریزی‌های خفیف ناشی از <bdi dir="ltr">DIC</bdi> تظاهر می‌یابند؛ اما خونریزی‌های شدید گوارشی، داخل ریوی و داخل جمجمه ممکن است نیز رخ دهند
+                            </p>
+                        </div>
+                        
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">نکته ۱۰۰٪ امتحانی</h4>
+                            <p class="text-xs mb-2">
+                                <bdi dir="ltr">DIC</bdi> با <bdi dir="ltr">t(15;17)</bdi> مرتبط است، به همین دلیل است که در لوسمی پرومیلوسیتیک حاد شایع‌تر است
+                            </p>
+                            <div class="bg-white p-2 rounded mt-2">
+                                <strong class="text-xs">یافته‌های <bdi dir="ltr">DIC</bdi> در <bdi dir="ltr">APL</bdi>:</strong>
+                                <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                    <li>اکیموزهای متعدد و خونریزی از بینی</li>
+                                    <li>طوالنی شدن <bdi dir="ltr">PT</bdi> و <bdi dir="ltr">PTT</bdi></li>
+                                    <li>کاهش فیبرینوژن و پالکت</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <strong>یادآوری:</strong> وجود <bdi dir="ltr">DIC</bdi> در بیمار مبتلا به لوسمی، همواره به نفع لوسمی پرومیلوسیتیک حاد (<bdi dir="ltr">APL</bdi>) است
+                        </div>
+                    </div>
+                </div>
+
+                <!-- درمان -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">درمان <bdi dir="ltr">APL</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>ترکیب درمانی:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><strong><bdi dir="ltr">ATRA</bdi> (ترتینوئین خوراکی):</strong> <bdi dir="ltr">All-trans retinoic acid</bdi></li>
+                                <li><strong><bdi dir="ltr">ATO</bdi> (تری‌اکسید آرسنیک)</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="highlight-box text-xs">
+                            <strong>پیش‌آگهی:</strong> مبتالیان به <bdi dir="ltr">t(15;17)</bdi> پیش‌آگهی بسیار خوبی دارند و با درمان مناسب احتمال <bdi dir="ltr">Cure</bdi> حدوداً ۸۵٪ است
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: سارکوم میلوئید -->
+        <section id="sarcoma" class="card p-6 border-t-4 border-cyan-500">
+            <h2 class="section-title text-xl text-cyan-700">۵. سارکوم میلوئید</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-cyan-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-cyan-800 mb-2">تعریف</h3>
+                    <p class="text-sm text-cyan-900">
+                        به ندرت ممکن است <bdi dir="ltr">AML</bdi> با یک توده از بالست‌های میلوئید در مناطقی در خارج از مغز استخوان مثل پوست، غدد لنفاوی، دستگاه <bdi dir="ltr">GI</bdi>، بافت نرم و بیضه‌ها تظاهر یابد. به این وضعیت نادر، سارکوم میلوئید گفته می‌شود.
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-2">اختلالات کروموزومی همراه</h3>
+                    <p class="text-sm text-blue-900 mb-2">سارکوم میلوئید در همراهی با اختلالات کروموزومی زیر دیده می‌شود:</p>
+                    <div class="grid md:grid-cols-2 gap-2 text-xs">
+                        <div class="bg-white p-2 rounded">• منوزومی ۷</div>
+                        <div class="bg-white p-2 rounded">• تریزومی ۸</div>
+                        <div class="bg-white p-2 rounded">• بازآرایی <bdi dir="ltr">11q23</bdi></div>
+                        <div class="bg-white p-2 rounded">• <bdi dir="ltr">inv(16)</bdi></div>
+                        <div class="bg-white p-2 rounded">• <bdi dir="ltr">t(8;21)</bdi></div>
+                        <div class="bg-white p-2 rounded">• تریزومی ۴</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: عوامل پیش‌آگهی -->
+        <section id="prognosis" class="card p-6 border-t-4 border-purple-500">
+            <h2 class="section-title text-xl text-purple-700">۶. عوامل مؤثر در پیش‌آگهی <bdi dir="ltr">AML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">مهم‌ترین عامل</h3>
+                    <p class="text-sm">مهمترین عامل در تعیین پیش‌آگهی <bdi dir="ltr">AML</bdi>، عوامل کروموزومی و مولکولی هستند</p>
+                </div>
+
+                <!-- جدول پیش‌آگهی -->
+                <div class="overflow-x-auto">
+                    <h3 class="font-bold text-lg mb-3">طبقه‌بندی پیش‌آگهی بر اساس عوامل سیتوژنتیک و مولکولی</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>گروه ریسک</th>
+                                <th>اختلالات سیتوژنتیک/مولکولی</th>
+                                <th>پیش‌آگهی</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="risk-good font-bold">خوب</td>
+                                <td class="text-right">
+                                    • <bdi dir="ltr">t(15;17)</bdi> - بسیار خوب<br>
+                                    • <bdi dir="ltr">t(8;21)</bdi><br>
+                                    • <bdi dir="ltr">inv(16)</bdi> یا <bdi dir="ltr">t(16;16)</bdi><br>
+                                    • موتاسیون <bdi dir="ltr">NPM1</bdi> بدون <bdi dir="ltr">FLT3-ITD</bdi><br>
+                                    • موتاسیون <bdi dir="ltr">CEBPA</bdi>
+                                </td>
+                                <td>~۵۵٪ بهبود</td>
+                            </tr>
+                            <tr>
+                                <td class="risk-intermediate font-bold">متوسط</td>
+                                <td class="text-right">
+                                    • بیماران بدون اختلال سیتوژنتیک مشخص<br>
+                                    • موتاسیون <bdi dir="ltr">NPM1</bdi> + <bdi dir="ltr">FLT3-ITD Low</bdi>
+                                </td>
+                                <td>~۳۰-۴۰٪</td>
+                            </tr>
+                            <tr>
+                                <td class="risk-poor font-bold">بد</td>
+                                <td class="text-right">
+                                    • <bdi dir="ltr">t(6;9)</bdi><br>
+                                    • <bdi dir="ltr">inv(3)</bdi><br>
+                                    • منوزومی ۷<br>
+                                    • کاریوتیپ کمپلکس<br>
+                                    • موتاسیون <bdi dir="ltr">TP53</bdi><br>
+                                    • <bdi dir="ltr">FLT3-ITD High</bdi> (نسبت آللی > ۰.۵)
+                                </td>
+                                <td>~۱۰-۲۰٪</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- نکات مهم موتاسیون‌ها -->
+                <div class="space-y-3">
+                    <div class="exam-tip p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">نکات کلیدی موتاسیون <bdi dir="ltr">NPM1</bdi> و <bdi dir="ltr">FLT3-ITD</bdi></h4>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-white p-3 rounded">
+                                <strong>۱. موتاسیون <bdi dir="ltr">NPM1</bdi> و <bdi dir="ltr">CEBPA</bdi>:</strong>
+                                <p class="text-xs mt-1">موجب پیش‌آگهی خوب می‌شوند</p>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong>۲. موتاسیون <bdi dir="ltr">FLT3-ITD</bdi>:</strong>
+                                <p class="text-xs mt-1">بر اساس نسبت آللی (کمتر از ۰.۵ یا بیشتر از ۰.۵) و وضعیت موتاسیون <bdi dir="ltr">NPM1</bdi>، پیش‌آگهی را تغییر می‌دهد</p>
+                                <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                    <li><bdi dir="ltr">FLT3-ITD Low</bdi> (نسبت آللی < ۰.۵): پیش‌آگهی بهتر</li>
+                                    <li><bdi dir="ltr">FLT3-ITD High</bdi> (نسبت آللی > ۰.۵): پیش‌آگهی بد</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong>۳. ترکیب موتاسیون‌ها:</strong>
+                                <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                    <li>فقط <bdi dir="ltr">NPM1</bdi> → پیش‌آگهی مطلوب</li>
+                                    <li>فقط <bdi dir="ltr">FLT3-ITD High</bdi> → پیش‌آگهی بد</li>
+                                    <li><bdi dir="ltr">NPM1</bdi> + <bdi dir="ltr">FLT3-ITD High</bdi> → پیش‌آگهی متوسط</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- عوامل بالینی -->
+                    <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                        <h3 class="font-bold text-orange-800 mb-2">عوامل بالینی مؤثر در پیش‌آگهی (بد کننده)</h3>
+                        <ul class="text-sm space-y-1 pr-4 list-disc list-inside">
+                            <li>سن بالا</li>
+                            <li>دوره علامتدار طوالنی قبل از تشخیص (بیشتر از ۳ ماه)</li>
+                            <li>وضعیت عملکردی بد</li>
+                            <li>هیپرلکوسیتوز (<bdi dir="ltr">WBC</bdi> > ۱۰۰,۰۰۰): لکوستاز ریوی و خونریزی زودرس <bdi dir="ltr">CNS</bdi></li>
+                            <li>سابقه ابتلا به میلودیسپالزی</li>
+                            <li>سابقه درمان با داروهای سیتوتوکسیک</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: بهبودی کامل -->
+        <section id="cr" class="card p-6 border-t-4 border-emerald-500">
+            <h2 class="section-title text-xl text-emerald-700">۷. بهبودی کامل (<bdi dir="ltr">Complete Remission - CR</bdi>)</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="exam-tip p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">معیارهای بهبودی کامل (۱۰۰٪ امتحانی)</h3>
+                    <p class="text-sm mb-3">بهبودی کامل براساس مطالعات خون و مغز استخوان می‌باشد. برای اطلاق بهبودی کامل باید شرایط زیر وجود داشته باشند:</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۱</span>
+                            <span>تعداد نوتروفیل سرم باید ۱۰۰۰/μL یا بیشتر باشد</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۲</span>
+                            <span>تعداد پالکت‌ها باید ۱۰۰,۰۰۰/μL یا بیشتر باشد</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۳</span>
+                            <span>بالست در خون محیطی وجود نداشته باشد</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۴</span>
+                            <span>در مغز استخوان باید کمتر از ۵٪ بالست وجود داشته باشد و <bdi dir="ltr">Auer rod</bdi> نباید دیده شود</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۵</span>
+                            <span>لوسمی خارج از مغز استخوان نباید وجود داشته باشد</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1 a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        نکته بسیار مهم
+                    </h3>
+                    <p class="text-sm">
+                        هموگلوبین برای تعریف بهبودی کامل استفاده نمی‌شود!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: ارزیابی قبل از درمان -->
+        <section id="evaluation" class="card p-6 border-t-4 border-pink-500">
+            <h2 class="section-title text-xl text-pink-700">۸. ارزیابی قبل از درمان</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-pink-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-pink-800 mb-3">اقدامات ضروری قبل از شروع شیمی‌درمانی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>۱. اکوکاردیوگرافی:</strong>
+                            <p class="text-xs mt-1">ارزیابی عملکرد قلبی قبل از شروع داروهای کاردیوتوکسیک (مثل آنتراسایکلین‌ها)</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۲. <bdi dir="ltr">LP</bdi> (پونکسیون کمری):</strong>
+                            <p class="text-xs mt-1">فقط در صورت وجود علائم درگیری <bdi dir="ltr">CNS</bdi> یا در <bdi dir="ltr">AML</bdi> منوسیتیک</p>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>۳. بررسی دندان‌ها:</strong>
+                            <p class="text-xs mt-1">در صورت نیاز به کشیدن دندان یا درمان‌های دندانی، قبل از شروع شیمی‌درمانی انجام شود</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: درمان AML -->
+        <section id="treatment" class="card p-6 border-t-4 border-blue-500">
+            <h2 class="section-title text-xl text-blue-700">۹. درمان <bdi dir="ltr">AML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- درمان القایی -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">مرحله اول: درمان القایی (<bdi dir="ltr">Induction Therapy</bdi>)</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold mb-2">رژیم استاندارد ۷+۳</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>سیتارابین:</strong> ۷ روز به صورت تزریق مداوم</li>
+                                <li><strong>آنتراسایکلین (دانوروبیسین یا ایداروبیسین):</strong> ۳ روز</li>
+                            </ul>
+                            <p class="text-xs mt-2">هدف: رسیدن به بهبودی کامل (<bdi dir="ltr">CR</bdi>)</p>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>ارزیابی پاسخ:</strong>
+                            <p class="text-xs mt-1">۱۴-۲۱ روز پس از شروع شیمی‌درمانی، مغز استخوان بررسی می‌شود. اگر بیشتر از ۲۰٪ بالست باقی بماند، یک دوره دیگر شیمی‌درمانی القایی لازم است.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- درمان تحکیمی -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">مرحله دوم: درمان تحکیمی (<bdi dir="ltr">Consolidation Therapy</bdi>)</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-xs mb-2">پس از دستیابی به <bdi dir="ltr">CR</bdi>، بیماران نیاز به درمان تحکیمی دارند که بر اساس گروه ریسک انتخاب می‌شود:</p>
+                        
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-green-700">۱. گروه ریسک خوب:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>سیتارابین با دوز باال (<bdi dir="ltr">HiDAC</bdi>) - چند دوره</li>
+                                <li>پیوند آلوژنیک معمولاً لازم نیست</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-yellow-700">۲. گروه ریسک متوسط:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>سیتارابین با دوز متوسط (<bdi dir="ltr">IDAC</bdi>)</li>
+                                <li>در صورت وجود دهنده مناسب، پیوند آلوژنیک توصیه می‌شود</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-red-700">۳. گروه ریسک بد:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li><strong>پیوند آلوژنیک مغز استخوان</strong> بهترین گزینه است</li>
+                                <li>شامل: کاریوتیپ کمپلکس، <bdi dir="ltr">FLT3-ITD High</bdi>، منوزومی ۷، و...</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded mt-3">
+                            <strong>نکته مهم:</strong> بیمارانی که دارای موتاسیون <bdi dir="ltr">FLT3-ITD</bdi> هستند باید تحت پیوند آلوژنیک مغز استخوان قرار گیرند
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: درمان‌های حمایتی -->
+        <section id="supportive" class="card p-6 border-t-4 border-gray-500">
+            <h2 class="section-title text-xl text-gray-700">۱۰. درمان‌های حمایتی در <bdi dir="ltr">AML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">اهمیت</h3>
+                    <p class="text-sm">عوارض عفونی عامل اصلی مرگ‌ومیر بیماران در طی درمان القایی و شیمی‌درمانی <bdi dir="ltr">Postremission</bdi> می‌باشد</p>
+                </div>
+
+                <!-- تزریق پالکت -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">۱. تزریق پالکت</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>شرایط تزریق:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>پالکت ≤ ۱۰,۰۰۰</li>
+                                <li>وجود خونریزی فعال</li>
+                                <li>بیمار تب‌دار</li>
+                                <li>مبتلا به <bdi dir="ltr">DIC</bdi></li>
+                            </ul>
+                            <p class="text-xs mt-2"><strong>هدف:</strong> حفظ پالکت همواره بیشتر از ۱۰,۰۰۰</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تزریق گلبول قرمز -->
+                <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                    <h3 class="font-bold text-orange-800 mb-3">۲. تزریق گلبول قرمز</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>شرایط تزریق:</strong>
+                            <p class="text-xs">در صورت افت هموگلوبین به کمتر از ۷-۸ گرم/دسی‌لیتر (در غیاب <bdi dir="ltr">CHF</bdi> یا <bdi dir="ltr">DIC</bdi> یا خونریزی فعال)</p>
+                            <p class="text-xs mt-1"><strong>هدف:</strong> حفظ هموگلوبین همواره بالای ۷-۸ گرم/دسی‌لیتر</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- پروفیالکسی ضدعفونی -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-green-800 mb-3">۳. پروفیالکسی ضدعفونی (۱۰۰٪ امتحانی)</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">آنتی‌بیوتیک پروفیالکتیک</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>کینولون‌ها (مثل سیپروفلوکساسین):</strong> در نوتروپنی</li>
+                                <li><strong>داروهای ضدقارچ (مثل پساکونازول):</strong> به ویژه در رژیم‌هایی که موجب موکوزیت (التهاب مخاط) می‌گردند، مفید است</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">پروفیالکسی ضدویروسی</h4>
+                            <p class="text-xs mb-1">در تمام بیمارانی که برای ویروس هرپس سیمپلکس و واریسلا زوستر سروپازتیو هستند:</p>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>آسیکلوویر یا واالسیکلوویر</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>تعریف نوتروپنی:</strong>
+                            <p class="text-xs mt-1">نوتروفیل < ۵۰۰ یا کمتر از ۱۰۰۰ که پیش‌بینی می‌شود در طی ۴۸ ساعت آینده به کمتر از ۵۰۰ کاهش یابد</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">درمان تب در نوتروپنی</h4>
+                            <p class="text-xs mb-1">استفاده سریع و تجربی آنتی‌بیوتیک‌های وسیع‌الطیف ضدباکتریایی و ضدقارچی</p>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>پیپراسیلین-تازوباکتام + آمینوگلیکوزید</li>
+                                <li>یا سفتازیدیم/سفپیم + آمینوگلیکوزید</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- محافظت از GVHD -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-3">۴. جلوگیری از <bdi dir="ltr">GVHD</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>اقدامات:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>استفاده از فرآورده‌های خونی اشعه‌دیده (رادیاسیون)</li>
+                                <li>استفاده از فرآورده‌های بدون لکوسیت (لکودپلیت) برای جلوگیری از آلوایمونیزاسیون و واکنش‌های تب‌دار</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Follow Up -->
+        <section class="card p-6 bg-gray-800 text-white">
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            
+            <div class="space-y-3 text-sm">
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱. اتیولوژی:</strong> ژنتیک، رادیاسیون، تماس با مواد شیمیایی و داروها در ایجاد <bdi dir="ltr">AML</bdi> نقش دارند. ویروس‌ها هیچ نقشی ندارند (۱۰۰٪ امتحانی)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۲. تشخیص:</strong> <bdi dir="ltr">AML</bdi> با وجود بیشتر از ۲۰٪ بالست در مغز استخوان یا خون تشخیص داده می‌شود
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۳. <bdi dir="ltr">Auer rods</bdi>:</strong> پاتوگنومونیک <bdi dir="ltr">AML</bdi> هستند (۱۰۰٪ امتحانی)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۴. <bdi dir="ltr">APL</bdi>:</strong> ترانسلوکاسیون <bdi dir="ltr">t(15;17)</bdi> + ژن اتصالی <bdi dir="ltr">PML-RARA</bdi> + <bdi dir="ltr">DIC</bdi> + درمان با <bdi dir="ltr">ATRA</bdi> و <bdi dir="ltr">ATO</bdi> + پیش‌آگهی عالی (۸۵٪)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۵. <bdi dir="ltr">AML</bdi> منوسیتی:</strong> هیپرتروفی لثه + انفیلتراسیون خارج مغز استخوان + <bdi dir="ltr">t(9;11)</bdi>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۶. پیش‌آگهی خوب:</strong> <bdi dir="ltr">t(15;17)</bdi>، <bdi dir="ltr">t(8;21)</bdi>، <bdi dir="ltr">inv(16)</bdi>، موتاسیون <bdi dir="ltr">NPM1</bdi> و <bdi dir="ltr">CEBPA</bdi>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۷. پیش‌آگهی بد:</strong> کاریوتیپ کمپلکس، <bdi dir="ltr">FLT3-ITD High</bdi>، منوزومی ۷، <bdi dir="ltr">TP53</bdi>، <bdi dir="ltr">t(6;9)</bdi>، <bdi dir="ltr">inv(3)</bdi>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۸. معیارهای <bdi dir="ltr">CR</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>نوتروفیل ≥ ۱۰۰۰</li>
+                        <li>پالکت ≥ ۱۰۰,۰۰۰</li>
+                        <li>فقدان بالست در خون</li>
+                        <li>بالست مغز استخوان < ۵٪</li>
+                        <li>هموگلوبین در تعریف <bdi dir="ltr">CR</bdi> استفاده نمی‌شود</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۹. رژیم القایی:</strong> ۷+۳ (سیتارابین ۷ روز + آنتراسایکلین ۳ روز)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۰. پیوند آلوژنیک:</strong> در گروه ریسک بد، کاریوتیپ کمپلکس و <bdi dir="ltr">FLT3-ITD</bdi> ضروری است
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۱. درمان‌های حمایتی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>تزریق پالکت اگر < ۱۰,۰۰۰</li>
+                        <li>تزریق <bdi dir="ltr">RBC</bdi> اگر <bdi dir="ltr">Hb</bdi> < ۷-۸</li>
+                        <li>کینولون + پساکونازول (در موکوزیت)</li>
+                        <li>آسیکلوویر (اگر <bdi dir="ltr">HSV</bdi> یا <bdi dir="ltr">VZV</bdi> سروپازتیو)</li>
+                        <li>فرآورده‌های خونی اشعه‌دیده (جلوگیری از <bdi dir="ltr">GVHD</bdi>)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۲. هیپرلکوسیتوز:</strong> <bdi dir="ltr">WBC</bdi> > ۱۰۰,۰۰۰ → لکوستاز ریوی + خونریزی <bdi dir="ltr">CNS</bdi> → پیش‌آگهی بد
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۳. تب در نوتروپنی:</strong> استفاده سریع آنتی‌بیوتیک وسیع‌الطیف (پیپراسیلین-تازوباکتام یا سفتازیدیم + آمینوگلیکوزید)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۴. عوارض عفونی:</strong> عامل اصلی مرگ‌ومیر در طی درمان است
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۵. سارکوم میلوئید:</strong> توده بالست میلوئید خارج از مغز استخوان (پوست، غدد، <bdi dir="ltr">GI</bdi>)
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-400 text-xs py-8">
+        تهیه شده جهت مرور سریع امتحانات دستیاری و پره انترنی
+        <br>
+        فصل ۸ هماتولوژی: لوسمی میلوئید حاد (<bdi dir="ltr">AML</bdi>) (صفحات ۱۴۷-۱۶۹)
+        <br>
+        شامل ۱۰ بخش اصلی و بیش از ۸۰ نکته امتحانی کلیدی
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active state for navbar
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('bg-amber-100', 'text-amber-900'));
+                this.classList.add('bg-amber-100', 'text-amber-900');
+            });
+        });
+    </script>
+</body>
+</html>
