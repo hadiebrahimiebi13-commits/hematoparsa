@@ -265,128 +265,42 @@
 
     <!-- Main Content Area -->
     <main class="main-content" id="mainContent">
-        <!-- صفحه خوش‌آمدگویی -->
+        <!-- صفحه اصلی (به‌روز شده) -->
         <div class="welcome-screen" id="welcomeScreen">
             <div class="welcome-content">
-                <div class="feature-icon">📚</div>
+                <div class="feature-icon">🩸</div>
                 <h1 class="welcome-title">خلاصه جامع هماتولوژی</h1>
-                <h2 class="welcome-subtitle">مجموعه کامل ۱۰ فصل</h2>
-                <p class="welcome-description">
-                    این مجموعه شامل خلاصه‌های جامع و حرفه‌ای تمامی فصول هماتولوژی است که به صورت شماتیک و با تمرکز بر نکات امتحانی تهیه شده است.
-                </p>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <div class="feature-title">نکات امتحانی</div>
-                        <p class="text-sm opacity-80">تمرکز بر نکات کلیدی</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <div class="feature-title">جداول و نمودارها</div>
-                        <p class="text-sm opacity-80">ارائه بصری مطالب</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔍</div>
-                        <div class="feature-title">سازماندهی شده</div>
-                        <p class="text-sm opacity-80">دسته‌بندی منظم مطالب</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <div class="feature-title">طراحی حرفه‌ای</div>
-                        <p class="text-sm opacity-80">رابط کاربری زیبا</p>
-                    </div>
-                </div>
-                
-                <div class="mt-12">
-                    <p class="text-lg opacity-90">برای شروع، یک فصل را از منوی سمت راست انتخاب کنید</p>
-                    <p class="text-sm mt-2 opacity-70">👈</p>
+                <h2 class="welcome-subtitle">مجموعۀ کامل فصول — مرور سریع و نکات امتحانی</h2>
+                <p class="welcome-description">مجموعه‌ای از خلاصه‌های شماتیک، جداول و نمودارها با تمرکز بر نکات کلیدی برای آمادگی امتحان.</p>
+                <div class="mt-8">
+                    <a href="#" onclick="document.getElementById('chapter-1')?.click(); return false;" class="bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold shadow">شروع مطالعه</a>
+                    <a href="#chaptersList" class="ml-4 text-white underline">فهرست فصول</a>
                 </div>
             </div>
         </div>
     </main>
 
     <script>
-        // ⚠️ مهم: لیست فصول - اینجا باید نام فایل‌های HTML خود را اضافه کنید
+        // ⚠️ لیست فصول (به‌روز شده طبق hemato.txt)
         const chapters = [
-            {
-                number: 1,
-                title: "مقدمه و اصول پایه",
-                file: "chapter01.html", // 👈 نام فایل HTML فصل ۱
-                available: true // true = فایل موجود است | false = فایل موجود نیست
-            },
-            {
-                number: 2,
-                title: "آنمی‌ها",
-                file: "chapter02.html",
-                available: true
-            },
-            {
-                number: 3,
-                title: "اختلالات خونریزی دهنده",
-                file: "chapter03.html",
-                available: true
-            },
-            {
-                number: 4,
-                title: "اختلالات انعقادی",
-                file: "chapter04.html",
-                available: true
-            },
-            {
-                number: 5,
-                title: "بیماری‌های مغز استخوان",
-                file: "chapter05.html",
-                available: true
-            },
-            {
-                number: 6,
-                title: "لوسمی‌های حاد",
-                file: "chapter06.html",
-                available: true
-            },
-            {
-                number: 7,
-                title: "لوسمی‌های مزمن",
-                file: "chapter07.html",
-                available: true
-            },
-            {
-                number: 8,
-                title: "سندرم‌های میلودیسپلاستیک",
-                file: "chapter08.html",
-                available: true
-            },
-            {
-                number: 9,
-                title: "نئوپلاسم‌های میلوپرولیفراتیو",
-                file: "chapter09.html",
-                available: true
-            },
-            {
-                number: 10,
-                title: "اختلالات لنفوسیت‌ها",
-                file: "chapter10.html", // 👈 فایلی که ساختیم
-                available: true // ✅ این فایل موجود است
-            }
-                        {
-                number: 11,
-                title: "سندرم‌های میلودیسپلاستیک",
-                file: "chapter08.html",
-                available: true
-            },
-            {
-                number: 12,
-                title: "نئوپلاسم‌های میلوپرولیفراتیو",
-                file: "chapter09.html",
-                available: true
-            },
-            {
-                number: 13,
-                title: "اختلالات لنفوسیت‌ها",
-                file: "chapter10.html", // 👈 فایلی که ساختیم
-                available: true // ✅ این فایل موجود است
-            }
+            { number: 1, title: "آنمی و پلی‌سیتمی", file: "chapter01.html", available: true },
+            { number: 2, title: "آنمی فقر آهن و سایر آنمی‌های هیپوپرولیفراتیو", file: "chapter02.html", available: true },
+            { number: 3, title: "آنمی‌های همولیتیک و آنمی ناشی از خونریزی‌های حاد", file: "chapter03.html", available: true },
+            { number: 4, title: "اختلالات هموگلوبین", file: "chapter04.html", available: true },
+            { number: 5, title: "آنمی آپالستیک و میلودیسپالزی", file: "chapter05.html", available: true },
+            { number: 6, title: "آنمی مگالوبالستیک", file: "chapter06.html", available: true },
+            { number: 7, title: "انتقال خون", file: "chapter07.html", available: true },
+            { number: 8, title: "لوسمی میلوئید حاد", file: "chapter08.html", available: true },
+            { number: 9, title: "لوسمی میلوئید مزمن", file: "chapter09.html", available: true },
+            { number: 10, title: "اختلالات لنفوسیت‌ها", file: "chapter10.html", available: true },
+            { number: 11, title: "اختلالات گرانولوسیت و منوسیت", file: "chapter11.html", available: false },
+            { number: 12, title: "بیماری‌های هموستاتیک و خونریزی‌دهنده", file: "chapter12.html", available: false },
+            { number: 13, title: "اختلالات ترومبوتیک", file: "chapter13.html", available: false },
+            { number: 14, title: "بیولوژی سرطان", file: "chapter14.html", available: false },
+            { number: 15, title: "اپیدمیولوژی سرطان", file: "chapter15.html", available: false },
+            { number: 16, title: "اصول درمان سرطان", file: "chapter16.html", available: false },
+            { number: 17, title: "سرطان ریه", file: "chapter17.html", available: false },
+            { number: 18, title: "سندرم‌های پارانئوپلاستیک آندوکرینولوژیک – هماتولوژیک", file: "chapter18.html", available: false }
         ];
 
         let currentChapter = null;
